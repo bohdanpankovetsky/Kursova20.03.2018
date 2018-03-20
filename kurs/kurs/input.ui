@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Input</class>
+ <widget class="QWidget" name="Input">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>536</width>
+    <height>668</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: white</string>
+  </property>
+  <widget class="QLineEdit" name="vlasnik">
+   <property name="geometry">
+    <rect>
+     <x>99</x>
+     <y>114</y>
+     <width>120</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="placeholderText">
+    <string>Власник авто</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>77</x>
+     <y>209</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Поломки</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="id">
+   <property name="geometry">
+    <rect>
+     <x>99</x>
+     <y>82</y>
+     <width>20</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="placeholderText">
+    <string>№</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>207</x>
+     <y>18</y>
+     <width>175</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Додавання автомобіля</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tech_obsl3">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>503</y>
+     <width>365</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="placeholderText">
+    <string>Технічне обслуговування 3</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="polomka4">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>353</y>
+     <width>365</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="placeholderText">
+    <string>4</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="polomka3">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>313</y>
+     <width>365</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="placeholderText">
+    <string>3</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>78</x>
+     <y>393</y>
+     <width>185</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Попередні технічні обслуговування</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="vartist_robit">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>549</y>
+     <width>77</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="placeholderText">
+    <string>Вартість робіт</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>52</y>
+     <width>110</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Загальна інформація</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tech_obsl1">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>423</y>
+     <width>365</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="placeholderText">
+    <string>Технічне обслуговування 1</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="harantia">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>181</y>
+     <width>78</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> QCheckBox::indicator:unchecked {
+     image: url(unchecked.jpg);
+	width: 16px;
+	height: 16px;
+	
+ }
+QCheckBox::indicator:unchecked:hover {
+     image: url(uncheckedhover.jpg);
+	width: 16px;
+	height: 16px;
+ }
+QCheckBox::indicator:checked {
+     image: url(checked.jpg);
+width: 16px;
+	height: 16px;
+ }
+ QCheckBox::indicator:checked:hover {
+     image: url(checkedhover.jpg);
+width: 16px;
+	height: 16px;
+ }
+</string>
+   </property>
+   <property name="text">
+    <string>На гарантії</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>211</x>
+     <y>599</y>
+     <width>125</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background-color: #2196F3;
+border: 0px;
+color: white;
+font-size: 18;
+}
+
+QPushButton:pressed {
+    background-color: #70b8ef;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Назад</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_save">
+   <property name="geometry">
+    <rect>
+     <x>348</x>
+     <y>599</y>
+     <width>125</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+background-color: #2196F3;
+border: 0px;
+color: white;
+font-size: 18;
+}
+
+QPushButton:pressed {
+    background-color: #70b8ef;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Додати до бази</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="polomka2">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>273</y>
+     <width>365</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="placeholderText">
+    <string>2</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="polomka1">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>231</y>
+     <width>365</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tech_obsl2">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>463</y>
+     <width>365</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="placeholderText">
+    <string>Технічне обслуговування 2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>550</y>
+     <width>22</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>грн</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nazva_avto">
+   <property name="geometry">
+    <rect>
+     <x>99</x>
+     <y>149</y>
+     <width>156</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="placeholderText">
+    <string>Назва атомобіля</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>id</tabstop>
+  <tabstop>vlasnik</tabstop>
+  <tabstop>nazva_avto</tabstop>
+  <tabstop>harantia</tabstop>
+  <tabstop>polomka1</tabstop>
+  <tabstop>polomka2</tabstop>
+  <tabstop>polomka3</tabstop>
+  <tabstop>polomka4</tabstop>
+  <tabstop>tech_obsl1</tabstop>
+  <tabstop>tech_obsl2</tabstop>
+  <tabstop>tech_obsl3</tabstop>
+  <tabstop>vartist_robit</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>pushButton_save</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
