@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'widget.ui'
 **
-** Created by: Qt User Interface Compiler version 5.6.3
+** Created by: Qt User Interface Compiler version 5.9.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -16,8 +16,8 @@
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QListView>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -30,7 +30,8 @@ public:
     QLabel *label_2;
     QFrame *line;
     QPushButton *pushButton_close;
-    QListView *listView;
+    QWidget *verticalLayoutWidget;
+    QVBoxLayout *verticalLayoutfordb;
 
     void setupUi(QWidget *Widget)
     {
@@ -52,10 +53,23 @@ public:
 "border-radius: 30px;\n"
 "font:16px;\n"
 "color: white;\n"
-"font-weight: 600\n"
+"font-weight: 500\n"
 "}\n"
 "QPushButton:pressed {\n"
 "    background-color: #70b8ef;\n"
+"	cursor: pointer;\n"
+"    display: inline-block;\n"
+"    overflow: hidden;\n"
+"    -webkit-user-select: none;\n"
+"    -moz-user-select: none;\n"
+"    -ms-user-select: none;\n"
+"    user-select: none;\n"
+"    -webkit-tap-highlight-color: transparent;\n"
+"    vertical-align: middle;\n"
+"    z-index: 1;\n"
+"    -webkit-transition: .3s ease-out;\n"
+"    transition: .3s ease-out;\n"
+"\n"
 "}"));
         pushButton_ok->setFlat(false);
         label_2 = new QLabel(Widget);
@@ -83,9 +97,14 @@ public:
 "    background-color: #70b8ef;\n"
 "}\n"
 ""));
-        listView = new QListView(Widget);
-        listView->setObjectName(QStringLiteral("listView"));
-        listView->setGeometry(QRect(61, 110, 669, 55));
+        verticalLayoutWidget = new QWidget(Widget);
+        verticalLayoutWidget->setObjectName(QStringLiteral("verticalLayoutWidget"));
+        verticalLayoutWidget->setGeometry(QRect(60, 120, 671, 279));
+        verticalLayoutfordb = new QVBoxLayout(verticalLayoutWidget);
+        verticalLayoutfordb->setSpacing(6);
+        verticalLayoutfordb->setContentsMargins(11, 11, 11, 11);
+        verticalLayoutfordb->setObjectName(QStringLiteral("verticalLayoutfordb"));
+        verticalLayoutfordb->setContentsMargins(0, 0, 0, 0);
 
         retranslateUi(Widget);
 
